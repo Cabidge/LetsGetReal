@@ -49,7 +49,7 @@ public class Tester {
 
         RationalNumber z = HALF.reciprocal();
         System.out.println(z.getValue() == 2);
-        System.out.println(NOT_INF.reciprocal().getValue() == NOT_INF.getValue());
-        System.out.println(NEGATIVE.reciprocal().getValue() == NEGATIVE.getValue());
+        System.out.println(NOT_INF.reciprocal().equals(NOT_INF));
+        System.out.println(NEGATIVE.reciprocal().equals(NEGATIVE));
     }
 }
