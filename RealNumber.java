@@ -19,15 +19,15 @@ public class RealNumber{
     *Special case: if one is exactly zero, the other must be exactly zero.
     */
     public boolean equals(RealNumber other){
-        double thisValue = getValue();
-        double otherValue = other.getValue();
-        
-        if (thisValue == 0) {
-            return thisValue == otherValue;
-        }
+      double thisValue = getValue();
+      double otherValue = other.getValue();
+      
+      if (thisValue == 0) {
+          return thisValue == otherValue;
+      }
 
-        double error = Math.abs((thisValue - otherValue) / thisValue) * 100; // * 100 to get percent error
-        return error <= 0.001;
+      double error = Math.abs((thisValue - otherValue) / thisValue) * 100; // * 100 to get percent error
+      return error <= 0.001;
     }
   
     /*
@@ -35,10 +35,10 @@ public class RealNumber{
     *the sum of this and the other
     */
     public RealNumber add(RealNumber other){
-       //other can be ANY RealNumber, including a RationalNumber
-       //or other subclasses of RealNumber (that aren't written yet)
-       RealNumber out = new RealNumber(getValue() + other.getValue());
-       return out;
+      //other can be ANY RealNumber, including a RationalNumber
+      //or other subclasses of RealNumber (that aren't written yet)
+      RealNumber out = new RealNumber(getValue() + other.getValue());
+      return out;
     }
   
     /*
@@ -46,7 +46,7 @@ public class RealNumber{
     *the product of this and the other
     */
     public RealNumber multiply(RealNumber other){
-          return null;
+      return null;
     }
   
     /*
@@ -54,7 +54,7 @@ public class RealNumber{
     *this divided by the other
     */
     public RealNumber divide(RealNumber other){
-          return null;
+      return null;
     }
   
     /*
