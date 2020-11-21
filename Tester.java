@@ -40,5 +40,6 @@ public class Tester {
         System.out.println(c.equals(HALF));
         System.out.println(d.equals(NOT_INF));
         System.out.println(e.equals(NEGATIVE));
+        System.out.println(HALF.getValue() == 0.5);
     }
 }
