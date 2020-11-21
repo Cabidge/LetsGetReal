@@ -17,5 +17,9 @@ public class Tester {
         RealNumber c = a.add(b);
         RealNumber d = new RealNumber(8.2);
         System.out.println(c.equals(d));
+
+        c = a.multiply(b);
+        d = new RealNumber(15.6);
+        System.out.println(c.equals(d));
     }
 }
