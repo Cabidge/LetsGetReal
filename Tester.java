@@ -46,5 +46,10 @@ public class Tester {
         System.out.println(NOT_INF.getNumerator() == 0);
         System.out.println(NOT_INF.getDenominator() == 1);
         System.out.println(NEGATIVE.getNumerator() == -1);
+
+        RationalNumber z = HALF.reciprocal();
+        System.out.println(z.getValue() == 2);
+        System.out.println(NOT_INF.reciprocal().getValue() == NOT_INF.getValue());
+        System.out.println(NEGATIVE.reciprocal().getValue() == NEGATIVE.getValue());
     }
 }

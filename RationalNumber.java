@@ -42,7 +42,8 @@ public class RationalNumber extends RealNumber
   *and denominator as this RationalNumber but reversed.
   */
   public RationalNumber reciprocal(){
-    return null;
+    RationalNumber out = new RationalNumber(getDenominator(), getNumerator());
+    return out;
   }
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
