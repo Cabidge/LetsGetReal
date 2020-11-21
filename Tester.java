@@ -28,5 +28,10 @@ public class Tester {
         c = a.subtract(b);
         d = new RealNumber(-2.2);
         System.out.println(c.equals(d));
+
+        // RationalNumber
+        RationalNumber HALF = new RationalNumber(1, 2);
+        RationalNumber NOT_INF = new RationalNumber(5, 0);
+        RationalNumber NEGATIVE = new RationalNumber(1, -1);
     }
 }
