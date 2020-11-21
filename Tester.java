@@ -51,5 +51,10 @@ public class Tester {
         System.out.println(z.getValue() == 2);
         System.out.println(NOT_INF.reciprocal().equals(NOT_INF));
         System.out.println(NEGATIVE.reciprocal().equals(NEGATIVE));
+
+        System.out.println("1/2".equals("" + HALF));
+        System.out.println("0/1".equals("" + NOT_INF));
+        System.out.println("-1/1".equals("" + NEGATIVE));
+        System.out.println(!"WOWOW".equals("" + NEGATIVE));
     }
 }
