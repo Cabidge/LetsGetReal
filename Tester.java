@@ -24,5 +24,9 @@ public class Tester {
 
         c = c.divide(b);
         System.out.println(c.equals(a));
+
+        c = a.subtract(b);
+        d = new RealNumber(-2.2);
+        System.out.println(c.equals(d));
     }
 }
