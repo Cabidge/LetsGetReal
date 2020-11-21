@@ -41,5 +41,10 @@ public class Tester {
         System.out.println(d.equals(NOT_INF));
         System.out.println(e.equals(NEGATIVE));
         System.out.println(HALF.getValue() == 0.5);
+
+        System.out.println(HALF.getDenominator() == 2);
+        System.out.println(NOT_INF.getNumerator() == 0);
+        System.out.println(NOT_INF.getDenominator() == 1);
+        System.out.println(NEGATIVE.getNumerator() == -1);
     }
 }
