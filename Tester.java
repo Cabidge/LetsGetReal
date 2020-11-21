@@ -11,5 +11,11 @@ public class Tester {
 
         b = new RealNumber(0.10000001);
         System.out.println(a.equals(b));
+
+        a = new RealNumber(3);
+        b = new RealNumber(5.2);
+        RealNumber c = a.add(b);
+        RealNumber d = new RealNumber(8.2);
+        System.out.println(c.equals(d));
     }
 }
