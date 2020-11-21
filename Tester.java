@@ -21,5 +21,8 @@ public class Tester {
         c = a.multiply(b);
         d = new RealNumber(15.6);
         System.out.println(c.equals(d));
+
+        c = c.divide(b);
+        System.out.println(c.equals(a));
     }
 }
