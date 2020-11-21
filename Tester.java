@@ -33,5 +33,12 @@ public class Tester {
         RationalNumber HALF = new RationalNumber(1, 2);
         RationalNumber NOT_INF = new RationalNumber(5, 0);
         RationalNumber NEGATIVE = new RationalNumber(1, -1);
+        
+        c = new RealNumber(0.5);
+        d = new RealNumber(0);
+        RealNumber e = new RealNumber(-1);
+        System.out.println(c.equals(HALF));
+        System.out.println(d.equals(NOT_INF));
+        System.out.println(e.equals(NEGATIVE));
     }
 }
