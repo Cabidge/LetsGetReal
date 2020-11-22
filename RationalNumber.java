@@ -10,16 +10,18 @@ public class RationalNumber extends RealNumber
   */
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored! 
-    if (deno < 0) {
-      nume *= -1;
-      deno *= -1;
-    } else if (deno == 0) {
-      nume = 0;
-      deno = 1;
+    if (deno == 0) {
+      numerator = 0;
+      denominator = 1;
+    } else {
+      numerator = nume;
+      denominator = deno;
+      reduce();
+      if (denominator < 0) {
+        numerator *= -1;
+        denominator *= -1;
+      }
     }
-    numerator = nume;
-    denominator = deno;
-    reduce();
   }
 
   public double getValue(){
