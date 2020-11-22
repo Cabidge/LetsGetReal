@@ -30,7 +30,7 @@ public class Tester {
         System.out.println(c.equals(d));
 
         // RationalNumber
-        RationalNumber HALF = new RationalNumber(1, 2);
+        RationalNumber HALF = new RationalNumber(-1, -2);
         RationalNumber NOT_INF = new RationalNumber(5, 0);
         RationalNumber NEGATIVE = new RationalNumber(1, -1);
         
@@ -61,5 +61,10 @@ public class Tester {
         RationalNumber REDUCED_TWO = new RationalNumber(200,100);
         System.out.println(REDUCED_HALF.equals(HALF));
         System.out.println(REDUCED_TWO.equals(TWO));
+
+        RationalNumber z = new RationalNumber(-3, -2);
+        RationalNumber y = new RationalNumber(9, 4);
+        System.out.println(y.equals(z.multiply(z)));
+        System.out.println(HALF.multiply(HALF.reciprocal()).getValue() == 1);
     }
 }
