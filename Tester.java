@@ -66,5 +66,9 @@ public class Tester {
         RationalNumber y = new RationalNumber(9, 4);
         System.out.println(y.equals(z.multiply(z)));
         System.out.println(HALF.multiply(HALF.reciprocal()).getValue() == 1);
+
+        RationalNumber x = new RationalNumber(2, 3);
+        System.out.println(x.equals(z.divide(y)));
+        System.out.println(HALF.divide(HALF).getValue() == 1);
     }
 }
