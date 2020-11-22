@@ -70,5 +70,10 @@ public class Tester {
         RationalNumber x = new RationalNumber(2, 3);
         System.out.println(x.equals(z.divide(y)));
         System.out.println(HALF.divide(HALF).getValue() == 1);
+
+        RationalNumber w = new RationalNumber(13, 6);
+        System.out.println(w.equals(z.add(x)));
+        System.out.println(TWO.add(NOT_INF).equals(TWO));
+        System.out.println(HALF.add(HALF).getValue() == 1);
     }
 }
