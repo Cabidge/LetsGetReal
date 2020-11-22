@@ -75,5 +75,12 @@ public class Tester {
         System.out.println(w.equals(z.add(x)));
         System.out.println(TWO.add(NOT_INF).equals(TWO));
         System.out.println(HALF.add(HALF).getValue() == 1);
+
+        x = new RationalNumber(-3, 4);
+        w = new RationalNumber(3, 4);
+        System.out.println(z.subtract(y).equals(x));
+        System.out.println(y.subtract(z).equals(w));
+        System.out.println(TWO.subtract(NOT_INF).equals(TWO));
+        System.out.println(HALF.subtract(HALF).equals(NOT_INF)); // equals zero
     }
 }
