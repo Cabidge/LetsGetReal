@@ -19,6 +19,7 @@ public class RationalNumber extends RealNumber
     }
     numerator = nume;
     denominator = deno;
+    reduce();
   }
 
   public double getValue(){
@@ -66,9 +67,10 @@ public class RationalNumber extends RealNumber
   *@return the value of the GCD
   */
   private static int gcd(int a, int b){
-    /*use euclids method or a better one
-    http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html*/
-    return 0;
+    if (b == 0) {
+      return a;
+    }
+    return gcd(b, a % b);
   }
 
   /**
@@ -77,7 +79,9 @@ public class RationalNumber extends RealNumber
   *reduced after construction.
   */
   private void reduce(){
-
+    int divisor = gcd(numerator,denominator);
+    numerator /= divisor;
+    denominator /= divisor;
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**

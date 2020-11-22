@@ -47,8 +47,8 @@ public class Tester {
         System.out.println(NOT_INF.getDenominator() == 1);
         System.out.println(NEGATIVE.getNumerator() == -1);
 
-        RationalNumber z = HALF.reciprocal();
-        System.out.println(z.getValue() == 2);
+        RationalNumber TWO = HALF.reciprocal();
+        System.out.println(TWO.getValue() == 2);
         System.out.println(NOT_INF.reciprocal().equals(NOT_INF));
         System.out.println(NEGATIVE.reciprocal().equals(NEGATIVE));
 
@@ -56,5 +56,10 @@ public class Tester {
         System.out.println("0/1".equals("" + NOT_INF));
         System.out.println("-1/1".equals("" + NEGATIVE));
         System.out.println(!"WOWOW".equals("" + NEGATIVE));
+        
+        RationalNumber REDUCED_HALF = new RationalNumber(3,6);
+        RationalNumber REDUCED_TWO = new RationalNumber(200,100);
+        System.out.println(REDUCED_HALF.equals(HALF));
+        System.out.println(REDUCED_TWO.equals(TWO));
     }
 }
