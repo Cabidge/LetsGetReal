@@ -15,8 +15,15 @@ public abstract class Number {
     *are within 0.00001 of eachother.
     *Special case: if one is exactly zero, the other must be exactly zero.
     */
-    public boolean equals(Number other) {
-        //TO BE IMPLEMENTED
-        return false;
-    }
+    public boolean equals(RealNumber other){
+        double thisValue = getValue();
+        double otherValue = other.getValue();
+        
+        if (thisValue == 0) {
+            return thisValue == otherValue;
+        }
+  
+        double error = Math.abs((thisValue - otherValue) / thisValue) * 100; // * 100 to get percent error
+        return error <= 0.001;
+      }
   }

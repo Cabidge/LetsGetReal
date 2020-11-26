@@ -13,23 +13,6 @@ public class RealNumber extends Number {
       return ""+getValue();
     }
     //---------ONLY EDIT BELOW THIS LINE------------
-  
-    /*
-    *Return true when the values are within 0.001% of eachother.
-    *Special case: if one is exactly zero, the other must be exactly zero.
-    */
-    public boolean equals(RealNumber other){
-      double thisValue = getValue();
-      double otherValue = other.getValue();
-      
-      if (thisValue == 0) {
-          return thisValue == otherValue;
-      }
-
-      double error = Math.abs((thisValue - otherValue) / thisValue) * 100; // * 100 to get percent error
-      return error <= 0.001;
-    }
-  
     /*
     *Return a new RealNumber that has the value of:
     *the sum of this and the other
