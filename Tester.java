@@ -82,5 +82,17 @@ public class Tester {
         System.out.println(y.subtract(z).equals(w));
         System.out.println(TWO.subtract(NOT_INF).equals(TWO));
         System.out.println(HALF.subtract(HALF).equals(NOT_INF)); // equals zero
+    
+        a = new RealNumber(-24.44);
+        b = new RealNumber(36.3);
+        c = new RealNumber(36.3);
+        d = new RealNumber(2);
+        e = new RealNumber(0.5);
+        System.out.println(a.compareTo(b) < 0);
+        System.out.println(b.compareTo(c) == 0);
+        System.out.println(d.compareTo(TWO) == 0); // Testing compareTo between RealNumbers and RationalNumbers
+        System.out.println(e.compareTo(HALF) == 0);
+        System.out.println(TWO.compareTo(e) > 0);
+        System.out.println(x.compareTo(w) < 0);
     }
 }
