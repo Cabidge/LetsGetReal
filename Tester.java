@@ -94,5 +94,18 @@ public class Tester {
         System.out.println(e.compareTo(HALF) == 0);
         System.out.println(TWO.compareTo(e) > 0);
         System.out.println(x.compareTo(w) < 0);
+
+        z = new RationalNumber(6, 9);
+        y = new RationalNumber(3, 0);
+        x = new RationalNumber(24, -6);
+        w = new RationalNumber(222, 1);
+        RationalNumber v = new RationalNumber(0, 99999999);
+        RationalNumber u = new RationalNumber(0, -99999999);
+        System.out.println(z.toString().equals("2/3"));
+        System.out.println(y.toString().equals("0"));
+        System.out.println(x.toString().equals("-4"));
+        System.out.println(w.toString().equals("222"));
+        System.out.println(v.toString().equals("0"));
+        System.out.println(u.toString().equals("0"));
     }
 }

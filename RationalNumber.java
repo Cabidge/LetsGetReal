@@ -58,6 +58,9 @@ public class RationalNumber extends Number {
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
+    if (getDenominator() == 1) {
+      return "" + getNumerator();
+    }
     return numerator + "/" + denominator;
   }
 
