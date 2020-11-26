@@ -15,7 +15,7 @@ public abstract class Number {
     *are within 0.00001 of eachother.
     *Special case: if one is exactly zero, the other must be exactly zero.
     */
-    public boolean equals(RealNumber other){
+    public boolean equals(Number other){
         double thisValue = getValue();
         double otherValue = other.getValue();
         
